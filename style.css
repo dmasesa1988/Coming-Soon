@@ -1,70 +1,148 @@
-/* Basic Styles */
+/* General Styles */
 body {
-  font-family: 'Josefin Sans', sans-serif; /* Use the correct font */
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .container {
-  max-width: 1110px; /* Adjust as needed */
+  max-width: 1110px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* Header Styles */
 header {
-  /* ... (styles for background, padding, etc.) */
+  background-color: #fff;
+  padding: 35px 0;
 }
 
-.logo {
-  /* ... (styles for logo alignment, size, etc.) */
+.logo img {
+  width: 100px; /* Adjust logo size as needed */
 }
 
 nav ul {
   list-style: none;
-  /* ... (styles for menu alignment, spacing, etc.) */
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
 }
 
 /* Hero Section Styles */
 .hero {
   text-align: center;
-  /* ... (styles for background image, padding, etc.) */
+  padding: 120px 0; /* Adjust padding as needed */
+  background-color: hsl(0, 0%, 100%);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px; /* Add space between text and image */
+}
+
+.hero-text {
+  flex: 1;
 }
 
 .hero h1 {
-  font-size: 3.5rem; /* Adjust font size as needed */
-  font-weight: 600; 
-  /* ... (styles for color, margin, etc.) */
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #1d1e20;
+  margin-bottom: 24px;
 }
 
 .hero p {
-  /* ... (styles for font size, color, line-height, etc.) */
+  color: #68696c;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero img, .hero picture {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Form Styles */
 form {
-  /* ... (styles for layout, spacing, etc.) */
+  display: flex;
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid #e1e2e3;
+  border-radius: 5px;
+  overflow: hidden; /* To hide button's extra rounded corner */
 }
 
 input[type="email"] {
-  /* ... (styles for padding, border, border-radius, etc.) */
+  flex: 1;
+  padding: 18px 24px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #68696c;
+}
+
+input[type="email"]::placeholder {
+  color: #68696c;
 }
 
 button[type="submit"] {
-  /* ... (styles for background color, color, padding, border, etc.) */
+  background-color: #1d1e20;
+  color: #fff;
+  padding: 18px 30px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Footer Styles */
 footer {
-  /* ... (styles for background color, text color, padding, etc.) */
+  background-color: #1d1e20;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 0.9rem;
 }
 
 /* Responsive Design (Media Queries) */
-@media (max-width: 768px) { 
-  /* Styles for tablet-sized screens and smaller */
-  /* ... (adjust font sizes, layout, etc.) */
-}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse; /* Stack image on top of text */
+    text-align: center;
+  }
 
-@media (max-width: 480px) {
-  /* Styles for mobile-sized screens */
-  /* ... (adjust font sizes, layout, etc.) */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    margin-bottom: 30px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
 }
