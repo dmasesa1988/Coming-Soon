@@ -48,10 +48,11 @@ nav a {
 
 main {
   padding-top: 80px;
+  overflow: hidden;
 }
 
 .hero {
-  background-image: url("hero.jpg");
+  background-image: url("hero-desktop.jpg");
   background-size: cover;
   background-position: center;
   height: 500px;
