@@ -1,154 +1,70 @@
-/* style.css */
-
+/* Basic Styles */
 body {
-  font-family: sans-serif;
+  font-family: 'Josefin Sans', sans-serif; /* Use the correct font */
   margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1110px; /* Adjust as needed */
   margin: 0 auto;
   padding: 20px;
 }
 
-.logo {
-  float: left;
+/* Header Styles */
+header {
+  /* ... (styles for background, padding, etc.) */
 }
 
-nav {
-  float: right;
+.logo {
+  /* ... (styles for logo alignment, size, etc.) */
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  /* ... (styles for menu alignment, spacing, etc.) */
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-main {
-  padding-top: 80px;
-  overflow: auto;
-}
-
+/* Hero Section Styles */
 .hero {
-  background-image: url("hero-desktop.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 500px;
+  text-align: center;
+  /* ... (styles for background image, padding, etc.) */
 }
 
 .hero h1 {
-  color: #fff;
-  font-size: 48px;
-  text-align: center;
-  margin-top: 100px;
+  font-size: 3.5rem; /* Adjust font size as needed */
+  font-weight: 600; 
+  /* ... (styles for color, margin, etc.) */
 }
 
 .hero p {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 20px;
+  /* ... (styles for font size, color, line-height, etc.) */
 }
 
-.hero form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+/* Form Styles */
+form {
+  /* ... (styles for layout, spacing, etc.) */
 }
 
-.hero input[type="email"] {
-  width: 200px;
-  height: 40px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+input[type="email"] {
+  /* ... (styles for padding, border, border-radius, etc.) */
 }
 
-.hero button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+button[type="submit"] {
+  /* ... (styles for background color, color, padding, border, etc.) */
 }
 
+/* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  position: relative; /* Or "absolute" or "fixed" if needed */
-  z-index: 2; 
+  /* ... (styles for background color, text color, padding, etc.) */
 }
-.hero { /* Or the container for your hero image */
-  position: relative; /* Or "absolute" or "fixed" if needed */
-  z-index: 1; 
-}
-@media (max-width: 768px) {
-  header {
-    position: static;
-  }
 
-  .hero {
-    height: auto;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .hero form {
-    flex-direction: column;
-  }
-
-  .hero input[type="email"] {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) { 
+  /* Styles for tablet-sized screens and smaller */
+  /* ... (adjust font sizes, layout, etc.) */
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  nav li {
-    margin-right: 10px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
+  /* Styles for mobile-sized screens */
+  /* ... (adjust font sizes, layout, etc.) */
 }
