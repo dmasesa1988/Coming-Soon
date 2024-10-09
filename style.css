@@ -48,7 +48,7 @@ nav a {
 
 main {
   padding-top: 80px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .hero {
