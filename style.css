@@ -101,8 +101,13 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: relative; /* Or "absolute" or "fixed" if needed */
+  z-index: 2; 
 }
-
+.hero { /* Or the container for your hero image */
+  position: relative; /* Or "absolute" or "fixed" if needed */
+  z-index: 1; 
+}
 @media (max-width: 768px) {
   header {
     position: static;
